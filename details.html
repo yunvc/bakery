@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DETAILS</title>
+<link rel="stylesheet" href="themes/final.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link href="mycss.css" rel="stylesheet" type="text/css">
+<script src="myjs.js"></script>
+</head>
+
+<body>
+<div data-role="page" id="page4detail" data-theme="a">
+  <div data-role="header"> 
+	  <!--(JQM1.4.5)
+		https://stackoverflow.com/questions/10691736/jquerymobile-back-button-is-not-showing-on-header	-->
+	  <a href="#order.html" id="back" data-rel="back" data-icon="back">BACK</a>
+	  <img src="img/footerLogo3.png" id="headerLogo" width="724" height="474" alt=""/></div>
+  <div data-role="content" id="content4detail">
+	  <h1 style="text-align: center">訂單明細</h1>
+    <table width="100%" border="1" cellspacing="0" cellpadding="5px">
+  <tbody>
+    <tr style="text-align: center">
+      <td>品名</td>
+      <td>售價</td>
+      <td>數量</td>
+      <td>單品小計</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">芋頭鹹蛋黃</td>
+      <td style="text-align: center">$60</td>
+      <td><div data-role="fieldcontain">
+        <label for="selectmenu" class="select"></label>
+        <select name="selectmenu" id="bagel3">
+	      <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+		  <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+		  <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+		  <option value="10">10</option>
+        </select>
+      </div></td>
+      <td><div data-role="fieldcontain">
+        <input type="text" name="textinput" id="btotal" value=""  />
+      </div></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">經典乳酪</td>
+      <td style="text-align: center">$55</td>
+      <td><div data-role="fieldcontain">
+        <label for="selectmenu2" class="select"></label>
+        <select name="selectmenu2" id="bagel4">
+		  <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+		  <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+		  <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+		  <option value="10">10</option>
+        </select>
+      </div></td>
+      <td><div data-role="fieldcontain">
+        <input type="text" name="textinput2" id="btotal2" value=""  />
+      </div></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">蔓越莓堅果餅乾</td>
+      <td style="text-align: center">$70</td>
+      <td><div data-role="fieldcontain">
+        <label for="selectmenu3" class="select"></label>
+        <select name="selectmenu3" id="cookie3">
+          <option value="0">0</option>
+		  <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+		  <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+		  <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+		  <option value="10">10</option>
+        </select>
+      </div></td>
+      <td><div data-role="fieldcontain">
+        <input type="text" name="textinput3" id="cktotal" value=""  />
+      </div></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">杏仁脆餅</td>
+      <td style="text-align: center">$58</td>
+      <td><div data-role="fieldcontain">
+        <label for="selectmenu4" class="select"></label>
+        <select name="selectmenu4" id="cookie4">
+		  <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+		  <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+		  <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+		  <option value="10">10</option>
+        </select>
+      </div></td>
+      <td><div data-role="fieldcontain">
+        <input type="text" name="textinput4" id="cktotal2" value=""  />
+      </div></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">檸檬起士蛋糕</td>
+      <td style="text-align: center">$90</td>
+      <td><div data-role="fieldcontain">
+        <label for="selectmenu5" class="select"></label>
+        <select name="selectmenu5" id="cake3">
+		  <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+		  <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+		  <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+		  <option value="10">10</option>
+        </select>
+      </div></td>
+      <td><div data-role="fieldcontain">
+        <input type="text" name="textinput6" id="catotal" value=""  />
+      </div></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">提拉米蘇</td>
+      <td style="text-align: center">$95</td>
+      <td><div data-role="fieldcontain">
+        <label for="selectmenu6" class="select"></label>
+        <select name="selectmenu6" id="cake4">
+		  <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+		  <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+		  <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+		  <option value="10">10</option>
+        </select>
+      </div></td>
+      <td><div data-role="fieldcontain">
+        <input type="text" name="textinput7" id="catotal2" value=""  />
+      </div></td>
+    </tr>
+  </tbody>
+</table>
+	  <h2>應付總額：</h2>
+	  <p id="total"></p>
+	  <a href="home.html" id="btn_detail" data-role="button">完成</a>
+  </div>
+  <div data-role="footer" data-theme="a"><img src="img/footerLogo3.png" id="footerLogo" width="718" height="515" alt=""/> </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LOCATION</title>
+<link rel="stylesheet" href="themes/final.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link href="mycss.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>	
+	
+<div data-role="page" id="page4map" data-theme="a">
+  <div data-role="header"> 
+	  <img src="img/footerLogo3.png" id="headerLogo" width="724" height="474" alt=""/>
+	  <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+  </div>
+
+	<div id="map_canvas" data-role="content">
+		<table width="100%" border="0" align="center" cellpadding="5px" cellspacing="0">
+  <tbody>
+    <tr>
+      <td><h1>門市位置</h1></td>
+    </tr>
+    <tr>
+      <td><img src="https://maps.googleapis.com/maps/api/staticmap?center=24.988654,121.543812&zoom=13&size=600x300&maptype=roadmap
+&markers=color:red%7Clabel:C%7C24.988654,121.543812
+&key=AIzaSyB8N-FO-2dYlq9EH19-xpX3w1T6ZpQl9w4" alt=""></td>
+    </tr>
+    <tr>
+      <td><p>地址：116台北市文山區木柵路一段17巷1號</p></td>
+    </tr>
+  </tbody>
+</table>
+	</div>
+	
+	
+<div data-role="footer" data-theme="a" id="footer4map"> <img src="img/footerLogo3.png" id="footerLogo" width="718" height="515" alt=""/> </div>
+  <div data-role="panel" data-position-fixed="true" data-theme="a" id="nav-panel">
+    <ul data-role="listview" data-theme="a" class="nav-search">
+      <br>
+      您好~
+      <div data-role="collapsible-set">
+        <div data-role="collapsible">
+          <h3>商品介紹 Product</h3>
+          <p>
+          <li><a href="bagel.html" class="product">貝果 Bagel</a></li>
+          <br>
+          <li><a href="cookie.html" class="product">曲奇 Cookie</a></li>
+          <br>
+          <li><a href="cake.html" class="product">小蛋糕 Cake</a></li>
+          </p>
+        </div>
+      </div>
+	  <li><a href="home.html">回到首頁 Home</a></li>
+      <li id="order2hide"><a href="order.html">商品訂購 Order</a></li>
+      <li><a href="location.html">門市位置 Location</a></li>
+      <li><a href="mailto:im@mail.shu.edu.tw">聯絡我們 Contact</a></li>
+      <li><a href="distribution.html">成員分工 Distribution</a></li>
+      <li><a href="instruction.html">操作說明 Instructions</a></li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

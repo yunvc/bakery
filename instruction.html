@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>INSTRUCTIONS</title>
+<link rel="stylesheet" href="themes/final.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link href="mycss.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+<div data-role="page" id="page4instruction" data-theme="a">
+<div data-role="header"> 
+	  <img src="img/footerLogo3.png" id="headerLogo" width="724" height="474" alt=""/> 
+	  <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a> 
+  </div>
+  <div data-role="content" id="content4detail">
+   <h1>1.index.html</h1>
+	  <p>點下中間(箭頭.gif)進入home.html</p>
+   <h1>2.home.html</h1>
+	  <p>中間為圖片輪播，由淡出、靜止(大約為2秒)、淡出，循環圖片輪播。
+header左邊為其他功能連結的menu，右邊為登入介面和註冊連結。
+當尚未註冊時，左邊menu上只會顯示"您好~"且隱藏"商品訂購"(order.html)；
+註冊成功後，若ID錯誤且PWD錯誤時，顯示"Please reinput!"；若ID錯誤或密碼錯誤，則分別顯示"Member is not exist!"、"PWD is Wrong!" 若ID和PWD皆正確，顯示"Check in ok! "，且左邊"您好"會變為"登入者姓名+先生/小姐，您好~"；。
+按下左邊登入介面的Cancel即為登出，會清除登入資料和註冊資料。
+</p>
+   <h1>3.signUp.html</h1>
+	  <p>當填寫欄位中有一處未填，則會顯示"Every field is required."，且註冊未成功；若註冊成功即顯示"Welcome!"。
+點header左邊的BACK，即回到上一頁(程式碼有備註JQM1.4.5會上一頁的方法)。
+</p>
+   <h1>4.商品介紹</h1>
+	  <p>bagel.html、cookie.html皆有品名、熱量、成分等資訊。
+(mouseover改為click)cake.html除了商品資訊外，當click某一張縮圖時，縮圖即會呈現在較大的商品圖片上。
+</p>
+   <h1>5.商品訂購</h1>
+	  <p>有每項商品的價格還有圖示以及葷素，select功能選擇數量，按下確認連結按鈕後，會顯示商品和選擇的數量。</p>
+   <h1>6.details.html</h1>
+	  <p>數量select選項會直接顯示在order.html選擇的數量並且單品小計會計算出同項商品的金額，應付總額會相加單品小計計算出全部總額。
+	  若select選項有更改數量，單品小計跟應付總額會連動跟著改變金額。按下完成連結按鈕後會顯示成功！並回到首頁。</p>
+   <h1>7.門市位置</h1>
+	  <p>門市的google地圖圖示和地標，以及地址。</p>
+   <h1>8.聯絡我們</h1>
+	  <p>點擊聯絡我們直接連結到gmail撰寫新郵件，收件人是本店信箱。</p>
+   <h1>9.成員分工</h1>	 
+	  <p>兩位組員分配各自製作的部分。</p>
+   <h1>10.操作說明</h1>	
+	  <p>每個頁面和功能的的用途和操作指示說明。</p>
+  </div>
+  <div data-role="footer" data-theme="a"><img src="img/footerLogo3.png" id="footerLogo" width="718" height="515" alt=""/> </div>
+<div data-role="panel" data-position-fixed="true" data-theme="a" id="nav-panel">
+    <ul data-role="listview" data-theme="a" class="nav-search">
+      <br>
+      <p id="showName">您好~</p>
+      <div data-role="collapsible-set">
+        <div data-role="collapsible">
+          <h3>商品介紹 Product</h3>
+          <p>
+          <li><a href="bagel.html" class="product">貝果 Bagel</a></li>
+          <br>
+          <li><a href="cookie.html" class="product">曲奇 Cookie</a></li>
+          <br>
+          <li><a href="cake.html" class="product">小蛋糕 Cake</a></li>
+          </p>
+        </div>
+      </div>
+	  <li><a href="home.html">回到首頁 Home</a></li> 	
+      <li id="order2hide"><a href="order.html">商品訂購 Order</a></li>
+      <li><a href="location.html">門市位置 Location</a></li>
+      <li><a href="mailto:im@mail.shu.edu.tw">聯絡我們 Contact</a></li>
+      <li><a href="distribution.html">成員分工 Distribution</a></li>
+      <li><a href="instruction.html">操作說明 Instructions</a></li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
+

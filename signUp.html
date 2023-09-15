@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>▻ SIGNUP</title>
+<link rel="stylesheet" href="themes/final.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link href="mycss.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div data-role="page" id="page4signUp" data-theme="a">
+  <div data-role="header"> 
+	  <!--(JQM1.4.5)
+		https://stackoverflow.com/questions/10691736/jquerymobile-back-button-is-not-showing-on-header	-->
+	  <a href="#" id="back" data-rel="back" data-icon="back">BACK</a>
+	  <img src="img/footerLogo3.png" id="headerLogo" width="724" height="474" alt=""/></div>
+  <div data-role="content" id="content4signUp">
+    <div id="info4member">
+      <table width="50%" border="0" align="center" cellpadding="20" cellspacing="0">
+        <tbody>
+          <tr>
+            <td><label for="textinput">ID:</label></td>
+            <td><input type="text" name="textinput" id="uid" /></td>
+          </tr>
+          <tr>
+            <td><label for="password">PWD:</label></td>
+            <td><input type="password" name="password" id="upwd" /></td>
+          </tr>
+          <tr>
+            <td><label for="textinput">Name:</label></td>
+            <td><input type="text" name="textinput" id="uname" /></td>
+          </tr>
+          <tr>
+            <td><label for="flipswitch">Sex:</label></td>
+            <td><select name="flipswitch" id="usex" data-role="slider">
+                <option value="男">男</option>
+                <option value="女">女</option>
+              </select></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td><button id="btn_signUp" onClick="save()">Sign Up</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div data-role="footer" data-theme="a"><img src="img/footerLogo3.png" id="footerLogo" width="718" height="515" alt=""/> </div>
+</div>
+</body>
+</html>
